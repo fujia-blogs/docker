@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  django-demo:
+    image: django-demo:latest
+    environment:
+      - REDIS_HOST=redis-server
+    networks:
+      - network-example
+    ports:
+      - 8888:5000
+
+  redis-server:
+    image: redis:latest
+    networks:
+      - network-example
+
+networks:
+  network-example:

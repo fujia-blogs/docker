@@ -1,0 +1,37 @@
+{
+  "name": "@fujia-blogs/docker",
+  "version": "1.0.0",
+  "description": "summarize the knowledge points related to docker",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fujia-blogs/cli.git"
+  },
+  "keywords": [
+    "blogs",
+    "articles",
+    "docker"
+  ],
+  "author": {
+    "email": "fujia.site@outlook.com",
+    "name": "fujia",
+    "url": "https://fujia.site"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fujia-blogs/cli/issues"
+  },
+  "homepage": "https://github.com/fujia-blogs/cli#readme",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^15.0.0",
+    "commitlint": "^15.0.0",
+    "husky": "^7.0.4"
+  }
+}
